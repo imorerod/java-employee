@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <script type="text/javascript" th:src="@{jquery.js}"></script>
+    <script type="text/javascript" th:src="@{/app.js}"></script>
+</head>
+<body>
+
+    <input type="number" id="searchId" placeholder="Seach By ID" />
+    <button id="btnSearchId">SEARCH</button>
+    <h1>Employee Salary Calculator!</h1>
+        <form id="employeeForm">
+            <input class="id" type="number" name="id" placeholder="Employee ID">
+            <input class="firstName" type="text" name="firstName" placeholder="First Name">
+            <input class="lastName" type="text" name="lastName" placeholder="Last Name">
+            <input class="position" type="text" name="position" placeholder="Employee Position">
+            <input class="salary" type="number" name="salary" placeholder="Employee Salary">
+            <button class="submit">Submit</button>
+        </form>
+</body>
+</html>
